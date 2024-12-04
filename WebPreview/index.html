@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            background-color: #444;
+            color: white;
+            padding: 20px 10px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            display: block;
+            margin: 10px auto;
+            width: 100%;
+            max-width: 970px;
+            height: 250px;
+            border: none;
+        }
+        .main-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .news-article {
+            background-color: #eaeaea;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-article.large {
+            grid-column: span 3;
+        }
+        .news-article.medium {
+            grid-column: span 2;
+        }
+        .news-article img {
+            width: 100%;
+            height: auto;
+            background-color: #d6d6d6;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .news-article h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .news-article p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f3f3f3;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .related-article {
+            margin-bottom: 15px;
+        }
+        .related-article img {
+            width: 100%;
+            height: 100px;
+            background-color: #d6d6d6;
+            margin-bottom: 10px;
+        }
+        .related-article h4 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Banner Preview</h1>
+        <p>Your source for the latest digital news</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#world">World</a></li>
+            <li><a href="#tech">Tech</a></li>
+            <li><a href="#business">Business</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span>Wednesday, December 4, 2024</span>
+    </nav>
+
+    <!-- Billboard iframe for banner -->
+    <iframe src="Banner-dubai/index.html" title="Banner Ad"></iframe>
+
+    <div class="main-container">
+        <!-- Main content -->
+        <div class="content">
+            <section class="news-section">
+                <div class="news-article large">
+                    <img src="" alt="Placeholder Image">
+                    <h3>Breaking: Tech Giant Announces Revolutionary AI Chip</h3>
+                    <p>The new AI chip promises unparalleled performance, paving the way for the next generation of AI applications...</p>
+                </div>
+                <div class="news-article medium">
+                    <img src="" alt="Placeholder Image">
+                    <h3>Cybersecurity Threats: What Businesses Should Know</h3>
+                    <p>As cyberattacks grow in sophistication, companies are being forced to rethink their security strategies...</p>
+                </div>
+                <div class="news-article">
+                    <img src="" alt="Placeholder Image">
+                    <h3>Top 10 Tech Gadgets for 2024</h3>
+                    <p>From foldable smartphones to smart glasses, these gadgets are reshaping our lives...</p>
+                </div>
+                <div class="news-article">
+                    <img src="" alt="Placeholder Image">
+                    <h3>Inside the World of Quantum Computing</h3>
+                    <p>Quantum computing is not just theoretical anymore—companies are racing to develop commercial applications...</p>
+                </div>
+                <div class="news-article medium">
+                    <img src="" alt="Placeholder Image">
+                    <h3>The Green Revolution: How Tech is Saving the Planet</h3>
+                    <p>Innovative startups are driving sustainability with renewable energy and eco-friendly products...</p>
+                </div>
+                <div class="news-article">
+                    <img src="" alt="Placeholder Image">
+                    <h3>Streaming Wars Update: Who’s Winning in 2024?</h3>
+                    <p>Exclusive content and new features are shaping the future of streaming platforms...</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar for related articles -->
+        <aside class="sidebar">
+            <h2>Related Articles</h2>
+            <div class="related-article">
+                <img src="" alt="Placeholder Image">
+                <h4>Top 5 Tips for Improving Your Online Security</h4>
+            </div>
+            <div class="related-article">
+                <img src="" alt="Placeholder Image">
+                <h4>How Quantum Computing is Changing Tech</h4>
+            </div>
+            <div class="related-article">
+                <img src="" alt="Placeholder Image">
+                <h4>Upcoming Tech Events to Watch in 2024</h4>
+            </div>
+            <div class="related-article">
+                <img src="" alt="Placeholder Image">
+                <h4>The Rise of Electric Vehicles: What to Expect</h4>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Digital Daily Times. All rights reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms">Terms of Service</a> | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+</html>
